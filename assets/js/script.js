@@ -65,7 +65,7 @@ function countdown () {
     remainingMilliseconds = remainingMilliseconds - hoursToMilliseconds(totalHours);
     let totalMinutes = millisecondsToMinutes(remainingMilliseconds);
 
-    remainingMilliseconds = remainingMilliseconds - minutesToMilliseconds(totalMinutes);
+    remainingMilliseconds -= minutesToMilliseconds(totalMinutes);
     let totalSeconds = millisecondsToSeconds(remainingMilliseconds);
 
     document.querySelector('#seconds').innerHTML = totalSeconds;
